@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scavenger Hunt Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="screen">
+    <div class="content-box">
+      <h1>Welcome to the Quest!</h1>
+      <button id="start-btn">Start</button>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+
+  <!-- Puzzle Screen -->
+  <div id="puzzle-screen" class="screen hidden">
+    <div class="content-box">
+      <div class="blanks" id="blanks"></div>
+      <input type="text" id="answer" placeholder="Enter keyword">
+      <button id="check-btn">Check</button>
+      <button id="restart-btn">Restart</button>
+      <div id="feedback"></div>
+    </div>
+  </div>
+
+  <!-- Winning Screen -->
+  <div id="winning-screen" class="screen hidden">
+    <div class="content-box">
+      <h1>You have completed your quest, look how far we have come! Now your final reward</h1>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // Background images
+    document.getElementById('welcome-screen').style.backgroundImage = "url('stonewall.jpeg')";
+    document.getElementById('puzzle-screen').style.backgroundImage = "url('stonewall.jpeg')";
+    document.getElementById('winning-screen').style.backgroundImage = "url('winningbackground.jpg')";
+  </script>
+</body>
+</html>
